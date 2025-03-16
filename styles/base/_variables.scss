@@ -1,0 +1,48 @@
+:root {
+	// цвета
+	--color-white: #ffffff;
+	--color-dark: #080b1d;
+	
+	--color-gray-50: #f1f1f1;
+	--color-gray-300: #58595d;
+	--color-gray-500: #2e2f35;
+	--color-gray-600: #222222;
+
+	--color-cyan-100: #d9f2f7;
+	--color-cyan-400: #02a99b;
+	--color-cyan-500: #009387;
+
+	--color-lime: #e0f8f2;
+	--color-blue: #eeecff;
+	--color-red: #faeded;
+
+	--color-orange-100: #fdf3ea;
+	--color-orange-300: #fdc639;
+	--color-orange-500: #ff6d2c;
+	--color-orange-800: #a89b90;
+
+// границы объектов
+--border: 2px solid var(--color-gray-500);
+
+// закруглённость границ объектов
+--border-radius: 13px;
+--border-radius-small: 12px;
+--border-radius-large: 15px;
+
+// тень объектов
+--border-shadow: 3px 3px 0px 0px var(--color-gray-500);
+
+// шрифты макета
+--font-famaly-base: 'Inter', sans-serif;
+--font-famaly-accent: 'Covered By Your Grace', sans-serif;
+
+// параметры контейнера
+--container-width: 1290px;
+--container-padding-x: 20px;
+
+// высота btn
+--btn-height: 44px;
+
+// скорость анимации тегов
+--transition-duration: .2s;
+}

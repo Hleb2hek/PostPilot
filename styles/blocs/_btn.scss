@@ -1,0 +1,37 @@
+@use '../base/index' as *;
+
+.btn {
+	@include flex-center(true);
+
+	padding: 14px 22px 12px 22px;
+	height: var(--btn-height);
+
+	border: var(--border);
+	box-shadow: var(--border-shadow);
+	border-radius: var(--border-radius-small);
+
+	font-family: var(--font-famaly-base);
+	font-size: 15px;
+	line-height: 1.2;
+	font-weight: 500;
+	
+	color: var(--color-white);
+	background-color: var(--color-orange-500);
+
+	@include hover {
+		color: var(--color-gray-500);
+		background-color: var(--color-white);
+	}
+	@include active {
+		box-shadow: none;
+	}
+
+	&.transparent {
+		color: var(--color-gray-500);
+		background-color: var(--color-white);
+		@include hover {
+			color: var(--color-gray-500);
+			background-color: var(--color-white);
+		}
+	}
+}
