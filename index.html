@@ -58,12 +58,74 @@
 					</li>
 				</ul>
 			</nav>
+
 			<div class="header__btns hidden-mobile">
-				<button type="button" class="header__btn btn transparent">Login</button>
-				<button type="button" class="header__btn btn">Create free account</button>
+				<button class="header__btn btn transparent" type="button">Login</button>
+				<button class="header__btn btn" type="button">Create free account</button>
 			</div>
 
+			<!-- Бургер кнопка при мобильном масштабе -->
+			<button class="btn__burger-menu burger-btn visible-mobile" type="button" onclick="mobileOverlay.showModal()">
+				<!-- Для скринридера -->
+				<span class="visually-hidden">Open navigation menu</span>
+			</button>
 		</div>
 	</header>
+
+	<dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+		<form class="mobile-overlay__close-btn-wrapper" method="dialog">
+			<button class="mobile-overlay__close-btn cross-btn" type="submit">
+				<span class="visually-hidden">Close navigation menu</span>
+			</button>
+		</form>
+		<div class="mobile-overlay__body">
+			<nav class="mobile-overlay__menu visible-mobile">
+				<ul class="mobile-overlay__menu-list">
+					<li class="mobile-overlay__menu-item">
+						<a class="mobile-overlay__menu-link" href="#!">
+							Resources
+						</a>
+						<ul class="mobile-overlay__menu-sublist">
+							<li class="mobile-overlay__menu-subitem">
+								<a class="mobile-overlay__menu-sublink" href="#!">First</a>
+							</li>
+							<li class="mobile-overlay__menu-subitem">
+								<a class="mobile-overlay__menu-sublink" href="#!">Second</a>
+							</li>
+							<li class="mobile-overlay__menu-subitem">
+								<a class="mobile-overlay__menu-sublink" href="#!">Third</a>
+							</li>
+						</ul>
+					</li>
+					<li class="mobile-overlay__menu-item">
+						<a class="mobile-overlay__menu-link" href="#!">
+							Success stories
+						</a>
+					</li>
+					<li class="mobile-overlay__menu-item">
+						<a class="mobile-overlay__menu-link" href="#!">
+							Company
+						</a>
+						<ul class="mobile-overlay__menu-sublist">
+							<li class="mobile-overlay__menu-subitem">
+								<a class="mobile-overlay__menu-sublink" href="#!">First</a>
+							</li>
+							<li class="mobile-overlay__menu-subitem">
+								<a class="mobile-overlay__menu-sublink" href="#!">Second</a>
+							</li>
+							<li class="mobile-overlay__menu-subitem">
+								<a class="mobile-overlay__menu-sublink" href="#!">Third</a>
+							</li>
+						</ul>
+					</li>
+					<li class="mobile-overlay__menu-item">
+						<a class="mobile-overlay__menu-link" href="#!">
+							Pricing
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</dialog>
 </body>
 </html>

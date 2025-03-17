@@ -2,12 +2,18 @@
 .header {
 	height: 65px;
 	background-color: var(--color-white);
+	border-top: 8px solid var(--color-lime);
 	&__container {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin-top: 8px;
-		padding-top: 32px;
+
+		// Сделано, чтобы по макету элементы header выходили
+		// за пределы своего бэкграунда
+		padding-top: 24px;
+		@include mobile {
+			padding-top: 17px;
+		}
 	}
 	&__logo {
 		@include mobile {
