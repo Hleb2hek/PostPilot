@@ -34,4 +34,12 @@
 			background-color: var(--color-white);
 		}
 	}
+	&.btn-upper {
+		padding: 22px 66px;
+		font-size: 13px;
+		line-height: 1.5;
+		letter-spacing: 1.2px;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
 }

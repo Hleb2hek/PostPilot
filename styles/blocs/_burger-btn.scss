@@ -4,22 +4,33 @@
 	@include reset-btn;
 	@include square(48px);
 
-	
 	position: relative;
 	border-radius: var(--border-radius-small);
 
 	@include hover {
-		background-color: var(--color-cyan-500);
+		background-color: var(--color-orange-500);
 	}
 	
-	&::after {
-		@include abs-center;
-
-		content: '';
+	& span {
+		position: absolute;
+		// смещаю span's относительно родительского блока
+		right: 11px;
+		// высота каждого span
+		height: 3px;
+		// ширина элементов относительно родителя
 		width: 50%;
-		height: 2px;
-		background-color: var(--color-gray-500);
-		border-radius: 5px;
-		box-shadow: 0 8px var(--color-gray-500), 0 -8px var(--color-gray-500);
+		background: var(--color-gray-500);
+		border-radius: 3px;
+
+		&:nth-child(1) {
+			top: 16px;
+		}
+		&:nth-child(2) {
+			width: 25%;
+			top: 50%;
+		}
+		&:nth-child(3) {
+			bottom: 13px;
+		}
 	}
 }

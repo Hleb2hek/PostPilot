@@ -1,0 +1,9 @@
+@use '../base/index' as *;
+
+.section {
+	padding-block: var(--section-padding-y);
+
+	@include mobile {
+		padding-block: 46px;
+	}
+}

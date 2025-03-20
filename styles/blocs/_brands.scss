@@ -1,0 +1,49 @@
+@use '../base/index' as *;
+
+.brands {
+	background-color: var(--color-white);
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__title {
+		max-width: 650px;
+		text-align: center;
+
+		&:not(:last-child) {
+			margin-bottom: 58px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		column-gap: 64px;
+
+		@include tablet {
+			display: grid;
+			grid-template-columns: repeat(2,1fr);
+			row-gap: 30px;
+		}
+
+		@include mobile {
+			display: grid;
+			grid-template-columns: 1fr;
+			row-gap: 30px;
+		}
+	}
+	&__item {
+		display: flex;
+	}
+	&__link {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 24px;
+		
+		@include hover {
+			transform: scale(1.2);
+		}
+	}
+}

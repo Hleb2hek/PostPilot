@@ -3,8 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="apple-mobile-web-app-title" content="PostPilot" />
+	
 	<title>PostPilot</title>
+
 	<link rel="stylesheet" href="/styles/main.css">
+
+	<link rel="icon" type="image/png" href="/img/icon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/img/icon/favicon.svg" />
+	<link rel="shortcut icon" href="/img/icon/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/icon/apple-touch-icon.png" />
+	<link rel="manifest" href="/img/icon/site.webmanifest" />
+
+
 </head>
 <body>
 	<header class="header">
@@ -66,18 +77,94 @@
 
 			<!-- Бургер кнопка при мобильном масштабе -->
 			<button class="btn__burger-menu burger-btn visible-mobile" type="button" onclick="mobileOverlay.showModal()">
+				<span></span>
+				<span></span>
+				<span></span>
 				<!-- Для скринридера -->
 				<span class="visually-hidden">Open navigation menu</span>
 			</button>
 		</div>
 	</header>
 
+	<main class="content">
+		<section class="section container">
+			<div class="section__body">
+				<div class="hero">
+					<div class="hero__body">
+						<h1 class="hero__title">
+							Meet your <br>
+							<span class="hero__title-accent accent">favorite</span> new (old) <br>
+							marketing channel.
+						</h1>
+						<p class="hero__description">
+							Remarkable results. Easier than email. Postcard marketing reinvented for modern ecommerce.
+						</p>
+						<div class="hero__wrapper">
+							<button class="hero__btn btn btn-upper" type="button">Try it Risk-free</button>
+							<div class="hero__stars">
+								<div class="hero__stars-img">
+									<img src="/img/hero/2.svg" alt="stars" width="24" height="24" loading="lazy">
+									<img src="/img/hero/2.svg" alt="stars" width="24" height="24" loading="lazy">
+									<img src="/img/hero/2.svg" alt="stars" width="24" height="24" loading="lazy">
+									<img src="/img/hero/2.svg" alt="stars" width="24" height="24" loading="lazy">
+									<img src="/img/hero/2.svg" alt="stars" width="24" height="24" loading="lazy">
+								</div>
+								<div class="hero__stars-description">5.0 Shopify Rating</div>
+							</div>
+						</div>
+					</div>
+					<img class="hero__img" src="/img/hero/1.png" alt="hero img" width="680" height="680" loading="lazy">
+				</div>
+			</div>
+		</section>
+
+		<section class="section brands">
+			<div class="brands__body container" >
+				<h2 class="brands__title">
+							Trusted by thousands
+							of top DTC <span class="brands__title-accent accent">brands.</span>
+				</h2>
+				<nav class="brands__menu">
+					<ul class="brands__list">
+						<li class="brands__item">
+							<a class="brands__link" href="#!">
+								<img class="brands__img" src="/img/brands/rungum.jpg" alt="RunGum-img" width="284" height="193" loading="lazy">
+								<img class="brands__name" src="/img/brands/rungum-name.jpg" alt="RunGum-name" width="184" height="32" loading="lazy">
+							</a>
+						</li>
+						<li class="brands__item">
+							<a class="brands__link" href="#!">
+								<img class="brands__img" src="/img/brands/beardbrand.jpg" alt="Beardbrand-img" width="284" height="193" loading="lazy">
+								<img class="brands__name" src="/img/brands/beardbrand-name.jpg" alt="Beardbrand-name" width="235" height="32" loading="lazy">
+							</a>
+						</li>
+						<li class="brands__item">
+							<a class="brands__link" href="#!">
+								<img class="brands__img" src="/img/brands/promix.jpg" alt="Promix-img" width="284" height="193" loading="lazy">
+								<img class="brands__name" src="/img/brands/promix-name.jpg" alt="Promix-name" width="166" height="32" loading="lazy">
+							</a>
+						</li>
+						<li class="brands__item">
+							<a class="brands__link" href="#!">
+								<img class="brands__img" src="/img/brands/porter.jpg" alt="Porter-img" width="284" height="193" loading="lazy">
+								<img class="brands__name" src="/img/brands/porter-name.jpg" alt="Porter-name" width="60" height="32" loading="lazy">
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+	</main>
+
 	<dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+
+		<!-- Кнопка для закрытия модального окна -->
 		<form class="mobile-overlay__close-btn-wrapper" method="dialog">
 			<button class="mobile-overlay__close-btn cross-btn" type="submit">
 				<span class="visually-hidden">Close navigation menu</span>
 			</button>
 		</form>
+
 		<div class="mobile-overlay__body">
 			<nav class="mobile-overlay__menu visible-mobile">
 				<ul class="mobile-overlay__menu-list">

@@ -6,7 +6,6 @@ body {
 	
 	font-family: var(--font-famaly-base);
 	font-weight: 500;
-	line-height: 1.87;
 	color:var(--color-gray-300);
 	background-color: var(--color-lime);
 }
@@ -26,10 +25,10 @@ h1,h2,h3,h4 {
 // Для каждого заголовка глобально задаём размер текста через
 // миксин, мак и мин размер (есть среднее значение, оно высчитывается в миксине, чек mixins)
 h1 {
-	@include fluid-text(82,63)
+	@include fluid-text(82,53)
 }
 h2 {
-	@include fluid-text(60,46)
+	@include fluid-text(63,36)
 }
 h3 {
 	@include fluid-text(28,24)

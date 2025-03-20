@@ -1,0 +1,92 @@
+@use '../base/index' as *;
+
+.hero {
+	display: flex;
+	align-items: center;
+	column-gap: 34px;
+	
+	@include desctop {
+		flex-direction: column;
+	}
+	&__title {
+		text-align: left;
+		line-height: 1.2;
+
+		&:not(:last-child) {
+			margin-bottom: 25px;
+		}
+
+		@include desctop {
+			text-align: center;
+		}
+		@include mobile {
+			&:not(:last-child) {
+				margin-bottom: 8px;
+			}
+		}
+		&-accent {
+			@include fluid-text (96, 66)
+		}
+
+	}
+	&__description {
+		max-width: 552px;
+		font-size: 20px;
+		line-height: 1.7;
+		&:not(:last-child) {
+			margin-bottom: 38px;
+		}
+		@include desctop {
+			text-align: center;
+		}
+
+		@include mobile {
+			font-size: 16px;
+			&:not(:last-child) {
+				margin-bottom: 18px;
+			}
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		column-gap: 40px;
+		@include desctop {
+			justify-content: center;
+		}
+		@include mobile {
+			flex-direction: column;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__btn {
+		@include mobile {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__stars {
+		&-img {
+			display: flex;
+			column-gap: 4px;
+			justify-content: start;
+			&:not(:last-child) {
+				margin-bottom: 4px;
+			}
+		}
+		&-description {
+			@include mobile {
+				text-align: center;
+			}
+		}
+	}
+	&__img {
+		max-width: 40%;
+		height: auto;
+		@include desctop {
+			display: none;
+		}
+	}
+}

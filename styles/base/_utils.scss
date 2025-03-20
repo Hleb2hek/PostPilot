@@ -36,3 +36,9 @@
 		display: none !important;
 	}
 }
+
+.accent {
+	font-family: var(--font-famaly-accent);
+	font-weight: normal;
+	color: var(--color-cyan-500);
+}
