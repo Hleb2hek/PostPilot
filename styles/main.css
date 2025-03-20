@@ -719,6 +719,11 @@ h3 {
 .brands__title:not(:last-child) {
   margin-bottom: 58px;
 }
+@media (max-width: 867px) {
+  .brands__title {
+    max-width: 468px;
+  }
+}
 .brands__list {
   display: flex;
   column-gap: 64px;

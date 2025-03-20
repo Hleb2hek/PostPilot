@@ -15,6 +15,10 @@
 		&:not(:last-child) {
 			margin-bottom: 58px;
 		}
+
+		@include mobile {
+			max-width: 468px;
+		}
 	}
 
 	&__list {
